@@ -9,12 +9,12 @@ import { addIceCreamQty, decreaseIceCreamQty } from "../redux/actions/iceCreamAc
 import { useState, useHistory } from "react";
 import { useNavigate } from "react-router-dom";
 import { colors } from '@mui/material';
-import { addCartSum } from '../redux/actions/cartSumAction';
+import { addCartSum,decreaseCartSum,deleteFromCartSum} from '../redux/actions/cartSumAction';
 
 export default function ShowCart() {
 
     const product = useSelector((state) => state.cart)
-    const sums = useSelector((state) => state.cartSum)
+    // const sums = useSelector((state) => state.cartSum)
     const dispatch = useDispatch()
     const [isButtonClick, setIsButtonClick] = useState(false);
     const [qty, setQty] = useState(0);
@@ -53,7 +53,7 @@ export default function ShowCart() {
                                     <span>   </span>
                                     <button class="btn btn-outline-dark" onClick={(e) => {
                                         e.preventDefault();
-                                        sums.sum--;
+                                        // sums.sum--;
                                         if (item.cartqty > 1) {
                                             dispatch(increseCartQty(item));
                                             setQty(item.cartqty)
@@ -61,14 +61,16 @@ export default function ShowCart() {
                                         else {
                                             dispatch(removeFromCart(item.id));
                                         }
+                                        dispatch(decreaseCartSum())
                                     }}>-
                                     </button>
                                     <Tooltip title="Delete">
                                         <IconButton onClick={(e) => {
                                             e.preventDefault();
                                             dispatch(removeFromCart(item.id));
-                                            if(item.cartqty> 1) 
-                                            sums.sum++;
+                                            // if(item.cartqty> 1) 
+                                            // sums.sum++;
+                                            dispatch(deleteFromCartSum(item.cartqty));
                                         }}>
                                             <DeleteIcon />
                                         </IconButton>
@@ -80,8 +82,9 @@ export default function ShowCart() {
                                         dispatch(decreaseIceCreamQty(item.id));
                                         setQty(item.cartqty)
                                         // dispatch(add())
-                                        if(sums.sum > 1)
-                                        sums.sum++;
+                                        // if(sums.sum > 1)
+                                        // sums.sum++;
+                                        dispatch(addCartSum())
                                     }}>+</button>
                                 </td>
                             </tr>

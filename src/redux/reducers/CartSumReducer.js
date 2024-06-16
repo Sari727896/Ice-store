@@ -1,4 +1,4 @@
-const cartsum={sum:1}
+const cartsum={sum:0}
  const CartSumReducer=(state=cartsum,action)=>
 {
   switch(action.type)
@@ -8,8 +8,19 @@ const cartsum={sum:1}
     {
         debugger
         console.log("aaa",state.sum)
-        return {sum:state.sum};
+        return {sum:state.sum+1};
     }
+    case
+    'DECREASE_SUM_CART':
+    {  
+      return {sum:state.sum-1};
+    }
+    case 
+    'DELETE_FROM_SUM_CART':
+     {
+      console.log("abcd",action.qty)
+      return {sum:state.sum-(action.qty)}
+     }
     default:
       return state;
   }

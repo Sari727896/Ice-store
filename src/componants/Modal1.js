@@ -43,12 +43,13 @@ function Modal1(props) {
           </Button>
           <button class="btn btn-outline-dark" id="addToCart" variant="primary" onClick={(e) => {
                                     e.preventDefault();
-                                    debugger
-                                    if(sums.sum == 1)
-                                    sums.sum=sums.sum ;
-                                    else{
-                                       sums.sum=sums.sum+1 ;
-                                    }
+                                    // debugger
+                                    // if(sums.sum == 1)
+                                    // sums.sum=sums.sum ;
+                                    // else{
+                                    //    sums.sum=sums.sum+1 ;
+                                    // }
+                                    dispatch(addCartSum())
                                     dispatch(decreaseIceCreamQty(props.id));
                                     addToCarts(props.item)
                                     
