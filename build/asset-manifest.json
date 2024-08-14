@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.d4186694.css",
-    "main.js": "/static/js/main.7acb02db.js",
-    "static/js/787.917857b7.chunk.js": "/static/js/787.917857b7.chunk.js",
+    "main.js": "/static/js/main.4d4eef7c.js",
+    "static/js/453.bea66239.chunk.js": "/static/js/453.bea66239.chunk.js",
     "static/media/קפוצינו-41.jpeg": "/static/media/קפוצינו-41.f8827210fe5c59280ecd.jpeg",
     "static/media/frozen_yogurt_powder-1.jpg": "/static/media/frozen_yogurt_powder-1.4b1926a330a198b61ced.jpg",
     "static/media/1.png": "/static/media/1.d0fc66c7d9edfb9d8ad8.png",
@@ -38,11 +38,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.d4186694.css.map": "/static/css/main.d4186694.css.map",
-    "main.7acb02db.js.map": "/static/js/main.7acb02db.js.map",
-    "787.917857b7.chunk.js.map": "/static/js/787.917857b7.chunk.js.map"
+    "main.4d4eef7c.js.map": "/static/js/main.4d4eef7c.js.map",
+    "453.bea66239.chunk.js.map": "/static/js/453.bea66239.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4186694.css",
-    "static/js/main.7acb02db.js"
+    "static/js/main.4d4eef7c.js"
   ]
 }
