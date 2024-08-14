@@ -3,7 +3,6 @@ import { decreaseIceCreamQty } from "./iceCreamAction"
 export const addToCart=(product) =>
 {
    
-    // decreaseIceCreamQty(product)
     return {
         type:"ADD_TO_CART",
         product

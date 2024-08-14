@@ -8,9 +8,7 @@ import ShowCart from './componants/Cart';
 import Home from './componants/Home';
 import pic2 from'../src/images/logo1.png';
 import About from './componants/About';
-import Pay from './componants/Pay';
 import Cart from './componants/Cart';
-// import { Shop } from '@mui/icons-material';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './componants/Navbar';
 import Payment from './componants/Payment';
@@ -36,7 +34,6 @@ export default function App() {
             <Route exact path="/ProductPresentation" element={<ProductPresentation />}></Route>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/Payment"element={<Payment/>}></Route>
-            <Route exact path="/Pay"element={<Pay/>}></Route>
           </Routes>
         </BrowserRouter>
         </Provider> 

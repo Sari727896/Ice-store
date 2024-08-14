@@ -124,10 +124,7 @@
 #title{
   color:   rgb(255, 0, 72);
   background-color: white;
-  /* width: 100vw;
-  height: 80px; */
  font-family: 'Bahnschrift Light Condensed';
-  /* margin-top: 90px; */
   font-size: 5em;
 }
 #logo1{
@@ -144,22 +141,15 @@
   width: 200px;
   height: 200px;
   margin-right: 40px;
-  /* display: grid; */
-  /* margin-bottom: 100px; */
-  /* display: flex; */
 }
 #cartImg{
   width: 100px;
   height: 150px;
 }
 #ti{
-  /* margin-bottom: 30vh; */
   text-align: center;
   color: rgb(255, 0, 72);
-  /* rgb(255, 192, 221); */
   font-family: 'Bahnschrift';
-  /* margin-left: 150px; */
-   /* display: flex; */
 }
 
 #names{
@@ -173,16 +163,13 @@
  font-weight: 900;
  font-size: 4em;
  font-family: 'Montserrat, sans-serif';
- /* margin-top: 50px; */
 }
 #aboutT{
   color: rgba(255, 0, 0, 0.5);
-  /* text-align: center; */
   margin-top: 40px;
   font-family: 'Montserrat, sans-serif';
   font-weight: bolder;
   font-size: 1.1em;
-  /* margin-top: 200px; */
 }
 #cardName{
   font-family: 'Montserrat, sans-serif';
@@ -197,15 +184,11 @@
   background-color: rgb(255, 0, 72);
 }
 #car{
-  /* background-color: rgb(255, 0, 72); */
   color: white;
-  /* height: 150px;
-  width: 150px; */
 }
 #paypal-buttons{
   height: 150px;
   width: 600px;
   margin-right: 610px;
-  /* margin-bottom: 100px; */
 }
 

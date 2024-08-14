@@ -1,7 +1,5 @@
 import { useState ,useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux"
-// import * as React from 'react';
-// import { Modal } from "@mui/material";
 import Modal1 from "./Modal1";
 import { addCartQty, addToCart } from "../redux/actions/cartActions";
 import { useNavigate } from "react-router-dom";
@@ -40,7 +38,6 @@ export default function ProductPresentation()
 </div>
 </div>
         )) : <div>Products is null</div>}
-        {/* <button onClick={()=>navigate("/ShowCart")}></button> */}
         </>
     )
       

@@ -295,7 +295,6 @@ const iceCreamReducer = (state = iceCreams, action) => {
             }
         case "DECREASE_ICE_CREAM_QTY":
             {
-                // debugger
                 const newIceCreams = [...state]
                 if(newIceCreams.find((carriage)=> carriage.id===action.id).qty===0)
                 {

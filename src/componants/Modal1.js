@@ -30,7 +30,6 @@ function Modal1(props) {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header  >
           <Modal.Title>{props.name}</Modal.Title>
-          {/* <button className="close-button" onClick={handleClose}><FaTimes /></button> */}
         </Modal.Header>
         <Modal.Body>
     <span style={{ fontWeight: 'bold' }}>price:</span> {props.price}&#8362;
@@ -43,12 +42,6 @@ function Modal1(props) {
           </Button>
           <button class="btn btn-outline-dark" id="addToCart" variant="primary" onClick={(e) => {
                                     e.preventDefault();
-                                    // debugger
-                                    // if(sums.sum == 1)
-                                    // sums.sum=sums.sum ;
-                                    // else{
-                                    //    sums.sum=sums.sum+1 ;
-                                    // }
                                     dispatch(addCartSum())
                                     dispatch(decreaseIceCreamQty(props.id));
                                     addToCarts(props.item)
@@ -56,7 +49,6 @@ function Modal1(props) {
                                     alert('The item has been added to the cart')
                                    handleClose()
                                 }}>ADD TO CART</button>
-          {/* <p>{props.item.qty}</p> */}
         </Modal.Footer>
       </Modal>
     </>

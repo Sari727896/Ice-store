@@ -11,13 +11,7 @@ const CartReducer = (state = products, action) => {
 
         case 'REMOVE_FROM_CART':
             {
-                debugger
-                // const newProduct =state?.filter((product) => product.id !== action.id); 
-                // action.product.qty+=1;
-                // action.product.cartqty=0;
                 return state.filter((item) => item.id!== action.id);
-
-                // return  newProduct;
             }
         case 'INCREASE_CART_QTY':
             {

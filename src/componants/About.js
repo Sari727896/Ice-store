@@ -1,7 +1,7 @@
 import pic1 from '../images/background/50jpg.jpg';
 const componentStyle = {
     backgroundImage: `url(${pic1})`,
-    backgroundSize: 'cover', // גודל התמונה יכסה את כל רוחב הקומפוננטה
+    backgroundSize: 'cover', 
     height: '100vh',
     width: '100%',
     display: 'flex',

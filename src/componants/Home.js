@@ -9,10 +9,8 @@ import pic8 from'../images/background/38.jpg';
 import pic9 from'../images/background/41.jpg';
 
 import { useEffect, useState } from 'react';
-// import { useNavigate } from "react-router-dom";
 export default function Home()
 {
-  // const navigate =useNavigate()
   const images = [pic1, pic7,pic8,pic9]; // רשימת תמונות
   const [currentImage, setCurrentImage] = useState(0); // משתנה לאחסון התמונה הנוכחית
 
@@ -40,9 +38,7 @@ export default function Home()
           <img id="pic" class="card-img-top" src={pic5} alt="" />
           <img id="pic" class="card-img-top" src={pic6} alt="" />
         </div>
-        {/* <small id="names">Ice creams scoops</small> */}
         </div>
-          {/* <button onClick={()=>navigate("/ProductPresentation")}></button> */}
 
         </>
     )

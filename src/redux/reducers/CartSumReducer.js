@@ -6,7 +6,6 @@ const cartsum={sum:0}
     case
     'ADD_SUM_CART':
     {
-        debugger
         console.log("aaa",state.sum)
         return {sum:state.sum+1};
     }
