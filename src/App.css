@@ -74,7 +74,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  /* margin-left: 8%; */
   border-color:  rgb(255, 0, 72);
 }
 #btn{

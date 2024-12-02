@@ -15,8 +15,8 @@ export default function Payment() {
     };
 
     const tableStyle = {
-        width: '50%', // Set the table width to 50% of the page
-        margin: '0 auto', // Center the table horizontally
+        width: '50%', 
+        margin: '0 auto',
         border: '1px solid #ddd',
         borderRadius: '8px',
         overflow: 'hidden',
@@ -47,7 +47,6 @@ export default function Payment() {
                 </tbody>
             </table>
             
-            {/* PayPal Payment Section */}
             <div style={{ marginTop: '20px' }}>
                 <PayPalScriptProvider options={{ "client-id": "test" }}>
                     <PayPalButtons 

@@ -1,17 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import ProductPresentation from './componants/Shop';
-import ShowCart from './componants/Cart';
-import Home from './componants/Home';
+import ProductPresentation from './componenets/Shop';
+import ShowCart from './componenets/Cart';
+import Home from './componenets/Home';
 import pic2 from'../src/images/logo1.png';
-import About from './componants/About';
-import Cart from './componants/Cart';
+import About from './componenets/About';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from './componants/Navbar';
-import Payment from './componants/Payment';
+import Navbar from './componenets/Navbar';
+import Payment from './componenets/Payment';
 export default function App() {
 
   const time = new Date();

@@ -81,7 +81,7 @@ export default function ShowCart() {
                 type="button"
                 class="btn btn-danger"
                 variant="secondary"
-                disabled={product.length === 0}  // Disable the button if the cart is empty
+                disabled={product.length === 0}  
                 onClick={() => navigate("/Payment")}
             >
                 GoToPayment

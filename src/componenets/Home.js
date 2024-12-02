@@ -11,13 +11,13 @@ import pic9 from'../images/background/41.jpg';
 import { useEffect, useState } from 'react';
 export default function Home()
 {
-  const images = [pic1, pic7,pic8,pic9]; // רשימת תמונות
+  const images = [pic1, pic7,pic8,pic9]; 
   const [currentImage, setCurrentImage] = useState(0); // משתנה לאחסון התמונה הנוכחית
 
   useEffect(() => {
       const timer = setTimeout(() => {
           setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-      }, 3000); // משנה תמונה כל 2 שניות
+      }, 3000); 
 
       return () => clearTimeout(timer);
   }, [currentImage]);

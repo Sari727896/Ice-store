@@ -1,11 +1,7 @@
-import { useState ,useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux"
 import Modal1 from "./Modal1";
 import { addCartQty, addToCart } from "../redux/actions/cartActions";
-import { useNavigate } from "react-router-dom";
 
-
-  
 
 export default function ProductPresentation()
 {

@@ -6,7 +6,6 @@ const cartsum={sum:0}
     case
     'ADD_SUM_CART':
     {
-        console.log("aaa",state.sum)
         return {sum:state.sum+1};
     }
     case
@@ -17,7 +16,6 @@ const cartsum={sum:0}
     case 
     'DELETE_FROM_SUM_CART':
      {
-      console.log("abcd",action.qty)
       return {sum:state.sum-(action.qty)}
      }
     default:
